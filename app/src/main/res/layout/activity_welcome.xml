@@ -9,4 +9,74 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="teamhorario.upslp.apphorariosupslp.WelcomeActivity">
 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/bannerupslp"
+        android:maxHeight="20dp"
+        android:maxWidth="100dp"
+        android:layout_alignParentEnd="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:foregroundTintMode="screen"
+        android:background="@drawable/border"
+        android:id="@+id/frameLayout"
+        android:layout_alignEnd="@+id/frameLayout2">
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Selecciona Carrera"
+            android:id="@+id/textView2"
+            android:layout_gravity="left|center_vertical"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textIsSelectable="true" />
+
+        <Spinner
+            android:layout_width="165dp"
+            android:layout_height="46dp"
+            android:id="@+id/spinner"
+            android:layout_gravity="right|center_vertical"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="124dp"
+            android:layout_height="105dp"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@drawable/hricon" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ACCEDER"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameLayout"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout2">
+
+        <TextView
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Derechos reservado UPSLP, 2016 Ingresa seleccionando tu carrera"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:textAlignment="center" />
+    </FrameLayout>
 </RelativeLayout>
