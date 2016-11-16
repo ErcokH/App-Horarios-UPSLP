@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="teamhorario.upslp.apphorariosupslp.WelcomeActivity">
+    tools:context="teamhorario.upslp.apphorariosupslp.WelcomeActivity"
+    android:scrollIndicators="start">
 
     <ImageView
         android:layout_width="fill_parent"
@@ -41,13 +42,6 @@
             android:textIsSelectable="true"
             android:text="Matricula:" />
 
-        <ImageView
-            android:layout_width="124dp"
-            android:layout_height="105dp"
-            android:id="@+id/imageView2"
-            android:layout_gravity="center_horizontal|top"
-            android:background="@drawable/hricon" />
-
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -61,6 +55,13 @@
             android:id="@+id/editText"
             android:layout_gravity="right|center_vertical" />
 
+        <ImageView
+            android:layout_width="89dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@drawable/iconmihorario" />
+
     </FrameLayout>
 
     <FrameLayout
@@ -68,7 +69,8 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/frameLayout"
         android:layout_alignParentStart="true"
-        android:id="@+id/frameLayout2">
+        android:id="@+id/frameLayout2"
+        android:layout_alignParentBottom="true">
 
         <TextView
             android:layout_width="296dp"
@@ -77,6 +79,7 @@
             android:text="Derechos reservado UPSLP, 2016 Ingresa Introducendo tu matricula"
             android:id="@+id/textView"
             android:layout_gravity="center"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textSize="12dp" />
     </FrameLayout>
 </RelativeLayout>

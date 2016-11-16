@@ -23,20 +23,9 @@ public class WelcomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent siguiente = new Intent(WelcomeActivity.this, NotificacionesActivity.class);
                 startActivity(siguiente);
-
             }
         });
     }
 
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        return super.onOptionsItemSelected(item);
-    }
 }
 

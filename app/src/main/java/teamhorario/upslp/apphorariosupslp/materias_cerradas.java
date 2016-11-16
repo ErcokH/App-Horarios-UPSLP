@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class NotificacionesActivity extends AppCompatActivity{
-
+public class materias_cerradas extends AppCompatActivity
+{
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notificaciones);
+        setContentView(R.layout.materias_disponibles);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -20,7 +21,6 @@ public class NotificacionesActivity extends AppCompatActivity{
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
-
         switch(item.getItemId())
         {
             case R.id.notificaciones:
@@ -28,31 +28,31 @@ public class NotificacionesActivity extends AppCompatActivity{
                     item.setChecked(false);
                 else
                     item.setChecked(true);
-                Intent siguiente = new Intent(NotificacionesActivity.this, NotificacionesActivity.class);
+                Intent siguiente = new Intent( materias_cerradas.this, NotificacionesActivity.class);
                 startActivity(siguiente);
             case R.id.cerradas:
                 if(item.isChecked())
                     item.setChecked(false);
                 else
                     item.setChecked(true);
-                Intent siguiente1 = new Intent(NotificacionesActivity.this, materias_cerradas.class);
+                Intent siguiente1 = new Intent( materias_cerradas.this, materias_cerradas.class);
                 startActivity(siguiente1);
             case R.id.disponibles:
                 if(item.isChecked())
                     item.setChecked(false);
                 else
                     item.setChecked(true);
-                Intent siguiente2 = new Intent(NotificacionesActivity.this, materias_disponibles.class);
+                Intent siguiente2 = new Intent( materias_cerradas.this, materias_disponibles.class);
                 startActivity(siguiente2);
             case R.id.mihorario:
                 if(item.isChecked())
                     item.setChecked(false);
                 else
                     item.setChecked(true);
-                Intent siguiente3 = new Intent(NotificacionesActivity.this, MihorarioActivity.class);
+                Intent siguiente3 = new Intent( materias_cerradas.this, MihorarioActivity.class);
                 startActivity(siguiente3);
         }
+
         return super.onOptionsItemSelected(item);
     }
 }
-
