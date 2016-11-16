@@ -16,7 +16,7 @@
         android:background="@drawable/bannerupslp"
         android:maxHeight="20dp"
         android:maxWidth="100dp"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="false" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -27,25 +27,19 @@
         android:foregroundTintMode="screen"
         android:background="@drawable/border"
         android:id="@+id/frameLayout"
-        android:layout_alignEnd="@+id/frameLayout2">
+        android:layout_alignEnd="@+id/frameLayout2"
+        android:layout_alignParentEnd="true">
 
         <TextView
             android:layout_width="172dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Selecciona Carrera"
             android:id="@+id/textView2"
             android:layout_gravity="left|center_vertical"
-            android:textAlignment="center"
+            android:textAlignment="viewStart"
             android:textSize="16dp"
-            android:textIsSelectable="true" />
-
-        <Spinner
-            android:layout_width="165dp"
-            android:layout_height="46dp"
-            android:id="@+id/spinner"
-            android:layout_gravity="right|center_vertical"
-            android:spinnerMode="dropdown" />
+            android:textIsSelectable="true"
+            android:text="Matricula:" />
 
         <ImageView
             android:layout_width="124dp"
@@ -58,8 +52,14 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="ACCEDER"
-            android:id="@+id/button"
+            android:id="@+id/btnacc"
             android:layout_gravity="center_horizontal|bottom" />
+
+        <EditText
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_gravity="right|center_vertical" />
 
     </FrameLayout>
 
@@ -74,7 +74,7 @@
             android:layout_width="296dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Derechos reservado UPSLP, 2016 Ingresa seleccionando tu carrera"
+            android:text="Derechos reservado UPSLP, 2016 Ingresa Introducendo tu matricula"
             android:id="@+id/textView"
             android:layout_gravity="center"
             android:textAlignment="center" />

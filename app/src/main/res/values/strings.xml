@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Horarios UPSLP</string>
+    <string name="Notificaciones">Notificaciones UPSLP</string>
+    <string name="MateriasDisponibles">Materias Disponibles</string>
+    <string name="mi_horario">Mi Horario</string>
+    <string name="Materias_cerradas">Materias Cerradas</string>
 </resources>

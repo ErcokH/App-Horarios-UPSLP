@@ -6,9 +6,7 @@
         <item name="colorPrimary">#00BCD4</item>
         <item name="colorPrimaryDark">#0097A7</item>
         <item name="colorAccent">#03A9F4</item>
-        <item name="colorPrimaryLight">#B2EBF2</item>
         <item name="android:textColor">#212121</item>
-        <item name="textColorSecondary">#757575</item>
         <item name="android:divider">#BDBDBD</item>
     </style>
     #FFFFFF
