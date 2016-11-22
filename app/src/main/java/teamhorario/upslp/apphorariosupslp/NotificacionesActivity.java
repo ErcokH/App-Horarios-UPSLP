@@ -24,33 +24,23 @@ public class NotificacionesActivity extends AppCompatActivity{
         switch(item.getItemId())
         {
             case R.id.notificaciones:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                Intent siguiente = new Intent(NotificacionesActivity.this, NotificacionesActivity.class);
+                Intent siguiente = new Intent(this, NotificacionesActivity.class);
                 startActivity(siguiente);
+                break;
             case R.id.cerradas:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                Intent siguiente1 = new Intent(NotificacionesActivity.this, materias_cerradas.class);
+                Intent siguiente1 = new Intent(this, materias_cerradas.class);
                 startActivity(siguiente1);
+                break;
             case R.id.disponibles:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                Intent siguiente2 = new Intent(NotificacionesActivity.this, materias_disponibles.class);
+                Intent siguiente2 = new Intent(this, materias_disponibles.class);
                 startActivity(siguiente2);
+                break;
             case R.id.mihorario:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                Intent siguiente3 = new Intent(NotificacionesActivity.this, MihorarioActivity.class);
+                Intent siguiente3 = new Intent(this, MihorarioActivity.class);
                 startActivity(siguiente3);
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
         }
         return super.onOptionsItemSelected(item);
     }

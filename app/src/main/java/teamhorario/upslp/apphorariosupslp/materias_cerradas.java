@@ -11,7 +11,7 @@ public class materias_cerradas extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.materias_disponibles);
+        setContentView(R.layout.materias_cerradas);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -24,35 +24,24 @@ public class materias_cerradas extends AppCompatActivity
         switch(item.getItemId())
         {
             case R.id.notificaciones:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                Intent siguiente = new Intent( materias_cerradas.this, NotificacionesActivity.class);
+                Intent siguiente = new Intent(this, NotificacionesActivity.class);
                 startActivity(siguiente);
+                break;
             case R.id.cerradas:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                Intent siguiente1 = new Intent( materias_cerradas.this, materias_cerradas.class);
+                Intent siguiente1 = new Intent(this, materias_cerradas.class);
                 startActivity(siguiente1);
+                break;
             case R.id.disponibles:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                Intent siguiente2 = new Intent( materias_cerradas.this, materias_disponibles.class);
+                Intent siguiente2 = new Intent(this, materias_disponibles.class);
                 startActivity(siguiente2);
+                break;
             case R.id.mihorario:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                Intent siguiente3 = new Intent( materias_cerradas.this, MihorarioActivity.class);
+                Intent siguiente3 = new Intent(this, MihorarioActivity.class);
                 startActivity(siguiente3);
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-
         return super.onOptionsItemSelected(item);
     }
 }

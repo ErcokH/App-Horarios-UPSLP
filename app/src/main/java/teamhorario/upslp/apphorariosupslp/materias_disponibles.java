@@ -25,35 +25,24 @@ public class materias_disponibles extends AppCompatActivity
         switch(item.getItemId())
         {
             case R.id.notificaciones:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                Intent siguiente = new Intent(materias_disponibles.this, NotificacionesActivity.class);
+                Intent siguiente = new Intent(this, NotificacionesActivity.class);
                 startActivity(siguiente);
+                break;
             case R.id.cerradas:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                Intent siguiente1 = new Intent(materias_disponibles.this, materias_cerradas.class);
+                Intent siguiente1 = new Intent(this, materias_cerradas.class);
                 startActivity(siguiente1);
+                break;
             case R.id.disponibles:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                Intent siguiente2 = new Intent(materias_disponibles.this, materias_disponibles.class);
+                Intent siguiente2 = new Intent(this, materias_disponibles.class);
                 startActivity(siguiente2);
+                break;
             case R.id.mihorario:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                Intent siguiente3 = new Intent(materias_disponibles.this, MihorarioActivity.class);
+                Intent siguiente3 = new Intent(this, MihorarioActivity.class);
                 startActivity(siguiente3);
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-
         return super.onOptionsItemSelected(item);
     }
 }
